@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasteleria</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(205, 93, 48);
+        }
+
+        h1 {
+            color: rgb(92, 73, 47);
+        }
+
+        p {
+            color: white;
+        }
+
+        .img-centro {
+            margin: 10px auto 10px;
+            display: block;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: rgb(224, 111, 66);
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: right;
+            padding: 20px;
+            width: 70%;
+            background-color: rgb(255, 129, 91);
+            height: 300px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+        <img src="./img/pastelebot.png" alt="Happy Birthday pastelissimo" class="img-centro" style="height: 500px" />
+    <section>
+        <nav>
+            <h1>Sabores disponibles</h1>
+            <article>
+                <h1>Chocolate</h1>
+                <h1>Fresa</h1>
+                <h1>Limón</h1>
+                <h1>Vainilla</h1>
+            </article>
+        </nav>
+
+
+        <nav>
+            <h1>Cantidad</h1>
+            <article>
+                <h1>16</h1>
+                <h1>13</h1>
+                <h1>52</h1>
+                <h1>13</h1>
+            </article>
+        </nav>
+    </section>
+    <section>
+        <nav>
+            <h1>Adornos disponibles</h1>
+            <article>
+                <h1>Fondant</h1>
+                <h1>Betún</h1>
+                <h1>Chocolate líquido</h1>
+            </article>
+        </nav>
+        <nav>
+            <h1>Cantidad</h1>
+            <article>
+                <h1>56</h1>
+                <h1>23</h1>
+                <h1>51</h1>
+            </article>
+        </nav>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table>
+        <th>Pedidos realizados</th>
+        <tr>
+            <td>Pedido1</td>
+        </tr>
+        <tr>
+            <td>Pedido2 </td>
+        </tr>
+        <tr>
+            <td>Pedido3</td>
+        </tr>
+        <tr>
+            <td>Pedido4</td>
+        </tr>
+    </table>
+</body>
+
+
+</html>

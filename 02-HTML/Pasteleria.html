@@ -8,16 +8,15 @@
     <style>
         body {background-color: rgb(205, 93, 48);}
         h1   {color: rgb(92, 73,47);}
-        p    {color: white;}
+        h2  {color: antiquewhite;}
+        p    {color: white;font-family: 'Courier New', Courier, monospace;font-size: 15;}
         .img-centro {  margin: 10px auto 10px;  display: block;}
         .images {width: auto;}
-        .mainBody{}
     </style>
 </head>
 <body>
-    <div class="mainPicture" >
+    <a href="./Nosotros.html">Sobre nosotros</a>
         <img src="./img/pastelebot.png" alt="Happy Birthday pastelissimo" class="img-centro" style="height: 500px;" >
-    </div>
     <table class=" img-centro">
         <th>
             <h1>Tenemos una gran variedad de sabores</h1>
@@ -77,14 +76,38 @@
     <br>
     <br>
     <br>
+    <h1>Crea tu propio pastel</h1>
     <label for="name">Nombre completo</label><br>
     <input type="text" id="name" ><br>
     <label for="telefono">Teléfono</label><br>
     <input type="tel" name="telefomo" id="telefono" minlength="9" maxlength="10"><br>
     <label for="correo">Correo electrónico</label><br>
     <input type="email" name="correo" id="correo"><br>
-    <label for="description">Descripción</label><br>
+    <label for="description">Descripción del pastel</label><br>
     <input type="text" name="description" id="description">
+
+    <h2>Escoge los sabores para tu pastel</h2>
+    <input type="checkbox" name="flavorChocolate" id="flavorChocolate">
+    <label for="flavor1">Pastel de chocolate</label><br>
+    <input type="checkbox" name="flavorFresa" id="flavorFresa">
+    <label for="flavor1">Fresa</label><br>
+    <input type="checkbox" name="flavorLimon" id="flavorLimon">
+    <label for="flavor1">Limón</label><br>
+    <input type="checkbox" name="flavorVainilla" id="flavorVainilla">
+    <label for="flavor1">Vainilla</label><br>
+
+    <h2>Escoge el adorno para el pastel</h2>
+    <input type="checkbox" name="ornament" id="Fondant">
+    <label for="Fondant">Fondant</label><br>
+    <input type="checkbox" name="ornament" id="Betun">
+    <label for="Betun">Betún</label><br>
+    <input type="checkbox" name="ornament" id="Chocolate">
+    <label for="Chocolate">Chocolate líquido</label><br>
+    <br>
+    <input type="submit" name="submit" id="submit">
+
+
+
 
 </body>
 </html>
